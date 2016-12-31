@@ -1,0 +1,64 @@
+@import 'mixins';
+@import 'colors';
+
+::-moz-selection { 
+  background: $accent;
+}
+
+::selection { 
+  background: $accent;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+body {
+  background-color: $backgroundcolor;
+  font-family: 'Muli', sans-serif;
+}
+
+p {
+  text-indent: 20px;
+  font-size: 17px;
+  line-height: 30px;
+  opacity: 0.6;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: 70px;
+  letter-spacing: 2px;
+  color: $accent;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  @include user-select(none)
+}
+
+.container {
+  padding: 50px 100px;
+  background-color: $background2color;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+}
+
+.dear {
+  padding-left: 50px;
+  margin-bottom: -30px;
+}
+
+.sig, .yours {
+  text-align: right;
+  padding-right: 100px;
+  margin-top: -50px;
+}
+
+.sig {
+  padding-right: 150px;
+  font-size: 80px;
+}
