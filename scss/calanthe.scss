@@ -45,6 +45,9 @@ h1, h2, h3 {
   margin-top: 200px;
   margin-bottom: 200px;
   background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+  -webkit-box-shadow: 0px 0px 73px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 73px -10px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 73px -10px rgba(0,0,0,0.75);
 }
 
 .dear {
