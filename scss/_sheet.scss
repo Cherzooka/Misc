@@ -775,9 +775,8 @@ li.active a, li.active a:hover {
 }
 
 .itemdetails a {
-  color: $font;
   text-decoration: underline;
-  text-decoration-color: $accent;
+  text-decoration-color: $font;
   text-decoration-skip: ink;
   cursor: help;
 }
