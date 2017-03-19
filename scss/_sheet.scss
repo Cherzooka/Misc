@@ -86,6 +86,8 @@ hr {
     margin-top: 17px;
     z-index: 99;
     position: relative;
+    cursor: default;
+    @include user-select(none)
 }
 
 #headerimage {
@@ -101,6 +103,7 @@ hr {
     left: 811px;
     top: 120px;
     z-index: 999;
+    @include user-select(none)
 }
 
 .nav i {
@@ -204,6 +207,8 @@ li.active a, li.active a:hover {
       0 2px $background, 
       2px 0 $background, 
       0 -2px $background;
+    cursor: default;
+    @include user-select(none)
 }
 
 .container {
@@ -276,15 +281,25 @@ li.active a, li.active a:hover {
     vertical-align: top;
 }
 
+.infobox a {
+  color: $font;
+  text-decoration: underline;
+  text-decoration-color: $accent;
+  text-decoration-skip: ink;
+  cursor: help;
+}
+
 #hpexp {
     padding: 20px;
     margin: 0px 100px;
+    cursor: default;
+    @include user-select(none)
 }
       
 #hp {
     font-family: 'saniretro';
     font-size: 35px;
-    margin-top: -28px;
+    margin-top: -30px;
     float: left;
     padding-left: 35px;
     display: inline;
@@ -369,6 +384,7 @@ li.active a, li.active a:hover {
     border-radius: 100%;
     -moz-border-radius: 100%;
     border: 5px solid $darkborder;
+    cursor: default;
 }
       
 #circlevalue {
@@ -384,6 +400,11 @@ li.active a, li.active a:hover {
       0 3px $background, 
       3px 0 $background, 
       0 -3px $background;
+      cursor: default;
+}
+
+#circlevalue a {
+  cursor: help;
 }
       
 #circlelabel {
@@ -398,10 +419,13 @@ li.active a, li.active a:hover {
       0 3px $background, 
       3px 0 $background, 
       0 -3px $background;
+      cursor: default;
 }
+
 
 .statt a {
     color: $font;
+    cursor: help;
 }
 
 #statline {
@@ -439,6 +463,7 @@ li.active a, li.active a:hover {
       0 3px $background, 
       3px 0 $background, 
       0 -3px $background;
+    @include user-select(none)
 }
 
 #stat2 {
@@ -455,6 +480,7 @@ li.active a, li.active a:hover {
       3px 0 $background, 
       0 -3px $background;
     z-index: 9;
+    @include user-select(none)
 }
       
 .bar {
@@ -489,6 +515,7 @@ li.active a, li.active a:hover {
     border-radius: 50px 5px 5px 50px;
     box-shadow: 0 0 0 2px $lightborder;
     float: left;
+    @include user-select(none)
 }
 
 .relation strong {
@@ -537,6 +564,14 @@ li.active a, li.active a:hover {
     margin-left: 100px;
 }
 
+.traitcontainer a {
+  color: $font;
+  text-decoration: underline;
+  text-decoration-color: $accent;
+  text-decoration-skip: ink;
+  cursor: help;
+}
+
 #profbonus {
     font-size: 20px;
     color: $font;
@@ -577,6 +612,8 @@ li.active a, li.active a:hover {
 
 #prof a {
     color:$font;
+    cursor: help;
+    @include user-select(none)
 }
 
 #slotscontainer {
@@ -589,6 +626,7 @@ li.active a, li.active a:hover {
     border-bottom: 2px solid $lightborder;
     position: fixed;
     z-index: 99;
+    @include user-select(none)
 }
       
 #slotslevel {
@@ -732,6 +770,8 @@ li.active a, li.active a:hover {
     text-align: center;
     float: left;
     margin: 2px 2px;
+    cursor: default;
+    @include user-select(none)
 }
 
 .itemdetails p {
@@ -785,6 +825,7 @@ li.active a, li.active a:hover {
     transition: all linear 0.3s;
     display: inline-block;
     margin-top: 5px;
+    @include user-select(none)
 }
 
 #tropes a:hover {
