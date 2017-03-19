@@ -760,6 +760,7 @@ li.active a, li.active a:hover {
     margin-top: -15px;
     text-align: justify;
     width: 470px;
+    cursor: default;
     margin-left: 30px;
 }
 
@@ -770,8 +771,15 @@ li.active a, li.active a:hover {
     text-align: center;
     float: left;
     margin: 2px 2px;
-    cursor: default;
     @include user-select(none)
+}
+
+.itemdetails a {
+  color: $font;
+  text-decoration: underline;
+  text-decoration-color: $accent;
+  text-decoration-skip: ink;
+  cursor: help;
 }
 
 .itemdetails p {
