@@ -1,0 +1,9 @@
+@import 'mixins';
+@import 'shae-sheet-colors';
+@import 'sheet';
+
+body {
+  background: url(https://dl.dropboxusercontent.com/s/w3khl0ug2q3omlu/efflam-mercier-speedpainting-final.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}

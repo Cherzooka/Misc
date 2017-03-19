@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> CHARACTER NAME </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="css/sheet.css">
+  <script src="https://use.fontawesome.com/257106a2c1.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+  <script src="http://static.tumblr.com/wgijwsy/Ebfm2v4gy/jquery.masonry.min.js"></script>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Muli|Monsieur+La+Doulaise|Nova+Mono'>
+  
+  <script>
+      jQuery(document).ready(function() {
+        jQuery('.tabs .tab-links a').on('click', function(e) {
+          var currentAttrValue = jQuery(this).attr('href');
+
+          // Show/Hide Tabs
+          jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+          // Change/remove current tab to active
+          jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+          e.preventDefault();
+        });
+      });
+    </script>
+    
+<script>
+      jQuery(document).ready(function() {
+        jQuery('.charas .charas-links a').on('click', function(e) {
+          var currentAttrValue = jQuery(this).attr('href');
+
+          // Show/Hide Tabs
+          jQuery('.charas ' + currentAttrValue).show().siblings().hide();
+
+          // Change/remove current tab to active
+          jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+          e.preventDefault();
+        });
+      });
+    </script>
+
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $("a[title]").style_my_tooltips({
+            tip_follows_cursor: true,
+            tip_delay_time: 90,
+            tip_fade_speed: 600,
+            attribute: "title"
+          });
+        });
+      })(jQuery);
+    </script>
+  
+</head>
+<body>
+  
+  <div id="header"> Character Name </div>
+
+        <div class="tabs">
+        <div class="nav">
+          <ul class="tab-links">
+            <li class="active"><a href="#tab1">Main</a></li>
+            <li><a href="#tab2">Biography</a></li>
+            <li><a href="#tab3">Features & Traits</a></li>
+            <li><a href="#tab4">Proficiencies</a></li>
+            <li><a href="#tab5">Spellbook</a></li>
+            <li><a href="#tab6">Inventory</a></li>
+            <li><a href="#tab7">Misc.</a></li>
+            <br>
+            <li><a href="{text:Pinterestlink}" target='_blank'>
+            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                Pinterest Board</a></li>
+            <li><a href="{text:SpotifyURL}"  target='_blank'>
+            <i class="fa fa-music" aria-hidden="true"></i> 
+                Spotify Playlist</a></li>
+
+          </ul></div>
+          
+        <div class="tab-content">
+
+<!--------------------------------- MAIN TAB -------------------------------->
+
+            <div id="tab1" class="tab active">
+              <div class="tabtext">
+              
+    <!----- BASIC INFORMATION ----->
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Name </div> 
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel">
+        Class & Level </div> 
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Race </div>
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Age </div>
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Gender </div>
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Pronouns </div>
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Height </div>
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Weight </div>
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Size </div>
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Diety </div>
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Background </div> 
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Birthplace </div> 
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Languages </div>
+        # </div></div>
+        
+<div class="infobox"><div class="line"><div class="linelabel"> 
+        Alignment </div>
+        # </div></div>
+                <hr>
+                
+    <!----- HP, LV, EXP ----->
+<div id="hpexp"><div class="hpbar">
+<span class="hpbarinner" style="width:{text:HP percent}%"></span></div>
+<div id="hp"># / # HP</div><br>
+
+<div id="hp" style="float:right; margin-top: -46px; margin-right: 32px;">
+# Level
+</div>
+
+<hr><br>
+
+    <!----- AC, SPEED, PERCEPTION ----->
+<div class="circle"><div id="circlevalue"> 
+        <a href="#" title="10 (Base) + 0 (Dex Modifier) + 0 (Armor Modifier)">
+        10</a></div><div id="circlelabel">
+        Armour</div></div>
+        
+<div class="circle"><div id="circlevalue">
+        30</div><div id="circlelabel" style="left: 0px;">
+        Speed</div></div>
+        
+<div class="circle"><div id="circlevalue">
+        <a href="#" title="10 (Base) + 0 (Wis Modifier) + 0 (Proficiency Modifier)">
+        10</a></div><div id="circlelabel" style="left: -20px;">
+        Perception
+</div></div></div><hr>
+                
+    <!---- STRENGTH ---->
+<div class="statt"><a href="#" title="Modifier: +0"><div id="statline">
+<div id="statprof"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+<div id="stat">STR</div><div id="stat2">
+    10</div><div class="bar">
+<span class="barinner" style="width:50%"></span></div></div></a>
+
+    <!---- INTELLIGENCE ---->
+<a href="#" title="Modifier: +0"><div id="statline">
+<div id="statprof"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+<div id="stat">INT</div><div id="stat2">
+    10</div><div class="bar">
+<span class="barinner" style="width:50%"></span></div></div></a>
+
+    <!---- DEXTERITY---->
+<a href="#" title="Modifier: +0"><div id="statline">
+<div id="statprof"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+<div id="stat">DEX</div><div id="stat2">
+    10</div><div class="bar">
+<span class="barinner" style="width:50%"></span></div></div></a>
+
+    <!---- WISDOM ---->
+<a href="#" title="Modifier: +0"><div id="statline">
+<div id="statprof"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+<div id="stat">WIS</div><div id="stat2">
+    10</div><div class="bar">
+<span class="barinner" style="width:50%"></span></div></div></a>
+
+    <!---- CONSTITUTION ---->
+<a href="#" title="Modifier: +0"><div id="statline">
+<div id="statprof"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+<div id="stat">CON</div><div id="stat2">
+    10</div><div class="bar">
+<span class="barinner" style="width:50%"></span></div></div></a>
+
+    <!---- CHARISMA ---->
+<a href="#" title="Modifier: +0"><div id="statline">
+<div id="statprof"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+<div id="stat">CHA</div><div id="stat2">
+    10</div><div class="bar">
+<span class="barinner" style="width:50%"></span></div></div></a></div>
+                
+              </div></div>
+
+<!------------------------------- BIOGRAPHY TAB ----------------------------->
+
+            <div id="tab2" class="tab">
+                <div class="tabtext">
+                
+<div class="container"><div class="line"><div class="linelabel"> BIOGRAPHY </div><br>
+<p> Vestibulum cursus, lacus eget vehicula imperdiet, neque ligula aliquam lorem, 
+convallis tincidunt tortor nibh id odio. Sed gravida justo non nisl rhoncus 
+dignissim. Duis et sapien vulputate, posuere nibh eu, porttitor augue. Praesent
+nisl lectus, ornare in dui eu, tempus viverra est. Pellentesque non felis ut 
+ipsum consequat tempor. Vestibulum ante ipsum primis in faucibus orci luctus et 
+ultrices posuere cubilia Curae; Mauris condimentum ex ut libero porta, eget 
+lacinia sem maximus. </p>
+                </div></div>
+
+<div class="container"><div class="line"><div class="linelabel"> PERSONALITY TRAITS </div><br>           
+<p> Aenean ultricies rutrum metus nec mattis. Cum sociis natoque penatibus et 
+magnis dis parturient montes, nascetur ridiculus mus. Ut a fermentum felis. Nam 
+tincidunt lobortis justo ut tincidunt. Aliquam pellentesque nisl nec libero 
+auctor, non egestas massa maximus. Sed quam risus, faucibus a nibh dignissim, 
+efficitur blandit eros. Sed semper accumsan metus, id feugiat velit interdum 
+efficitur. Morbi a mauris et quam vulputate cursus. Vestibulum in fermentum 
+velit. Suspendisse augue magna, interdum ut erat sed, varius suscipit dui. 
+Quisque auctor neque eu mauris feugiat condimentum. Maecenas nibh turpis, 
+aliquam at nisi non, pretium dictum dui. Morbi luctus ex tristique mollis 
+consectetur. Vestibulum lacinia ultrices ornare. Integer lobortis sem vitae 
+ligula suscipit varius. Donec iaculis auctor mollis. </p>
+    </div></div>
+
+<div class="container"><div class="line"><div class="linelabel"> IDEALS </div><br>
+<p> Integer lacus quam, vulputate ut tempus a, faucibus ut lectus. Aliquam 
+vulputate dolor sed leo iaculis varius. Sed interdum eros sit amet ultricies 
+euismod. Maecenas cursus ultricies aliquet. Etiam mattis, risus non faucibus suscipit, enim mi ultricies nibh, sit amet varius mi orci ut lectus. Vestibulum placerat tempor felis maximus sollicitudin. Vestibulum nec diam est. Donec semper, lectus eu sagittis imperdiet, ligula est blandit lorem, a iaculis odio nunc non ex. Suspendisse dapibus, turpis sagittis efficitur tincidunt, erat est maximus ligula, eu cursus metus mauris bibendum turpis. Ut quis nisl id lacus fringilla imperdiet vitae cursus purus. Aliquam ac tempor lacus. Ut bibendum lacus blandit dignissim porta. Nunc lobortis ipsum quis tempor scelerisque. Sed ac justo hendrerit, tincidunt dui ut, gravida nunc. Quisque vitae enim nec leo sagittis posuere. </p>
+    </div></div>
+    
+<div class="container"><div class="line"><div class="linelabel"> BONDS </div><br>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet sollicitudin quam. Cras maximus ultricies orci. Nulla congue neque vitae massa rhoncus elementum. Phasellus vehicula quam dapibus, sagittis nibh auctor, efficitur neque. Donec nec facilisis est. Praesent lacus enim, scelerisque at ante eget, iaculis rhoncus purus. Nullam iaculis lorem id nunc suscipit, ut efficitur lacus maximus. Pellentesque cursus cursus gravida. Ut sed malesuada sem, et volutpat nunc. </p>
+
+<div class="relation">
+    <img src="https://dl.dropboxusercontent.com/s/88ttu8ab8a0r1pt/relation.png"><div class="end"></div>
+    <strong>Character Name - Relation</strong>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus eu lectus sagittis fermentum et sit amet velit. Sed sed sagittis lacus. Sed porttitor felis purus, ornare rutrum massa cursus in. Mauris vel eros magna. Fusce porttitor suscipit ornare. Proin nec viverra enim. Cras et lacinia mauris, malesuada consequat tellus. Ut in viverra lectus. Maecenas euismod tellus sit amet ex congue blandit. Pellentesque nec porta nibh. Vivamus nunc felis, suscipit vel lorem et, mattis porta nulla.</p>
+</div>
+    </div></div>
+    
+<div class="container"><div class="line"><div class="linelabel"> FLAWS </div><br>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit quam nec congue elementum. Aliquam viverra massa sit amet lectus gravida interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus bibendum ultrices nulla eget consectetur. Pellentesque ac diam vitae nisl consectetur molestie. Nulla et gravida tortor. Praesent ullamcorper, dui vitae congue euismod, libero mauris aliquet neque, eu tincidunt ligula risus in justo. Nullam ac cursus arcu. </p>
+    </div></div>
+    
+<div class="container"><div class="line"><div class="linelabel"> APPEARANCE</div><br>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque enim urna, facilisis et tortor nec, lobortis eleifend nisl. Etiam ac mi lacus. Vivamus facilisis felis sem, a pellentesque orci gravida ac. Nullam nec enim erat. Donec molestie condimentum orci, id finibus magna gravida sed. Donec id semper purus, a vulputate massa. Duis eget accumsan mi. Sed porta purus in interdum tempor. Nunc sem magna, aliquet id placerat sit amet, facilisis sit amet metus. Maecenas metus quam, mattis vitae blandit tristique, feugiat vel purus. </p>
+    </div></div>
+    
+<div class="container"><div class="line"><div class="linelabel"> NOTES </div><br>
+<ul>
+    <li><span> Note</span></li>
+    <li><span> Note</span></li>
+    <li><span> Note</span></li>
+    <li><span> Note</span></li>
+</ul></div></div>
+                
+              </div></div>
+
+<!--------------------------- FEATURES & TRAITS TAB ------------------------->
+
+            <div id="tab3" class="tab">
+              <div id="tabtext">
+              
+<!--- EXTRA TRAIT CONTAINER
+
+<div class="traitcontainer"><div class="line"><div class="linelabel"> TRAIT OR FEATURE </div><br>
+    This is the description of the trait or feature.
+</div></div><Br>
+
+--->
+              
+<div class="traitcontainer"><div class="line"><div class="linelabel"> TRAIT OR FEATURE </div><br>
+    This is the description of the trait or feature.
+</div></div><Br>
+
+<div class="traitcontainer"><div class="line"><div class="linelabel"> TRAIT OR FEATURE </div><br>
+    This is the description of the trait or feature.
+</div></div><Br>
+              </div></div>
+
+<!----------------------------- PROFICIENCIES TAB --------------------------->
+
+            <div id="tab4" class="tab">
+              <div id="tabtext"><div id="prof">
+<div class="line"><div class="linelabel"> STRENGTH </div>
+    <a href="#" title="+0 Str Modifier">
+    Atheletics +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a>
+</div><br>
+
+<div class="line"><div class="linelabel"> DEXTERITY </div>
+    <a href="#" title="+0 Dex Modifier">
+        Acrobatics +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br> 
+    
+    <a href="#" title="+0 Dex Modifier">
+        Sleight of Hand +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br>
+    
+    <a href="#" title="+0 Dex Modifier">
+        Stealth +0 <i class="fa fa-circle-o" aria-hidden="true"></i>
+</div></a><br>
+
+<div class="line"><div class="linelabel"> INTELLIGENCE</div>
+    <a href="#" title="+0 Int Modifier">
+        Arcana +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br> 
+    
+    <a href="#" title="+0 Int Modifier">
+        History +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br> 
+    
+    <a href="#" title="+0 Int Modifier">
+        Investigation +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br>
+    
+    <a href="#" title="+0 Int Modifier">
+        Nature +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br> 
+    
+    <a href="#" title="+0 Int Modifier">
+        Religion +0 <i class="fa fa-circle-o" aria-hidden="true"></a></i>
+</div><br>
+
+<div class="line"><div class="linelabel"> WISDOM </div>
+    <a href="#" title="+0 Wis Modifier">
+        Animal Handling +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br>
+    
+    <a href="#" title="+0 Wis Modifier">
+        Insight +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br> 
+    
+    <a href="#" title="+0 Wis Modifier">
+        Medicine +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br> 
+    
+    <a href="#" title="+0 Wis Modifier">
+        Perception +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br>
+        
+    <a href="#" title="+0 Wis Modifier">
+        Survival +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a>
+</div><br>
+
+<div class="line"><div class="linelabel"> CHARISMA </div>
+    <a href="#" title="+0 Cha Modifier">
+        Deception +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br>
+        
+    <a href="#" title="+0 Cha Modifier">
+        Intimidation +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br>
+        
+    <a href="#" title="+0 Cha Modifier">
+        Performance +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a><br>
+        
+    <a href="#" title="+0 Cha Modifier">
+        Persuasion +0 <i class="fa fa-circle-o" aria-hidden="true"></i></a>
+</div></div>
+
+              <div id="profbonus">
+<div id="bonus">
+    Proficiency Bonus: <strong> +2 </strong></div>
+    <strong>Armor:</strong> # <br>
+    <strong>Weapons:</strong> # <br>
+    <strong>Tools:</strong> # </div>
+              </div></div>
+
+<!------------------------------- SPELLBOOK TAB ----------------------------->
+
+            <div id="tab5" class="tab">
+                <div id="slotscontainer">
+                  <div id="slotslevel"> Lv 1 </div>
+                  <div class="slot"><span>1</span></div>
+                </div>
+              <div id="tabtext" style="padding-top: 100px;">
+
+<!---
+
+<div class="spell"><div class="line" style=""><div class="linelabel"> SPELL NAME </div> Spell Type <br>
+<div class="spelltext">This is the description of the spell.</div>
+<div class="spellstats">
+    <strong>Casting Time:</strong> # <br>
+    <strong>Range:</strong> # <br>
+    <strong>Components:</strong> # <br>
+    <strong>Duration:</strong> #
+</div></div></div>
+
+--->
+
+<div class="spell"><div class="line" style=""><div class="linelabel"> SPELL NAME </div> Spell Type <br>
+<div class="spelltext">This is the description of the spell.</div>
+<div class="spellstats">
+    <strong>Casting Time:</strong> # <br>
+    <strong>Range:</strong> # <br>
+    <strong>Components:</strong> # <br>
+    <strong>Duration:</strong> #
+</div></div></div>
+
+<div class="spell"><div class="line" style=""><div class="linelabel"> SPELL NAME </div> Spell Type <br>
+<div class="spelltext">This is the description of the spell.</div>
+<div class="spellstats">
+    <strong>Casting Time:</strong> # <br>
+    <strong>Range:</strong> # <br>
+    <strong>Components:</strong> # <br>
+    <strong>Duration:</strong> #
+</div></div></div>
+
+<div class="spell"><div class="line" style=""><div class="linelabel"> SPELL NAME </div> Spell Type <br>
+<div class="spelltext">This is the description of the spell.</div>
+<div class="spellstats">
+    <strong>Casting Time:</strong> # <br>
+    <strong>Range:</strong> # <br>
+    <strong>Components:</strong> # <br>
+    <strong>Duration:</strong> #
+</div></div></div>
+
+<div class="spell"><div class="line" style=""><div class="linelabel"> SPELL NAME </div> Spell Type <br>
+<div class="spelltext">This is the description of the spell.</div>
+<div class="spellstats">
+    <strong>Casting Time:</strong> # <br>
+    <strong>Range:</strong> # <br>
+    <strong>Components:</strong> # <br>
+    <strong>Duration:</strong> #
+</div></div></div>
+
+<div class="spell"><div class="line" style=""><div class="linelabel"> SPELL NAME </div> Spell Type <br>
+<div class="spelltext">This is the description of the spell.</div>
+<div class="spellstats">
+    <strong>Casting Time:</strong> # <br>
+    <strong>Range:</strong> # <br>
+    <strong>Components:</strong> # <br>
+    <strong>Duration:</strong> #
+</div></div></div>
+
+              </div></div>
+
+<!------------------------------- INVENTORY TAB ----------------------------->
+
+            <div id="tab6" class="tab">
+
+<div id="money">
+    00 <strong>CP</strong> 
+    00 <strong>SP</strong> 
+    00 <strong>EP</strong> 
+    00 <strong>GP</strong>
+    00 <strong>PP</strong><Br>
+
+</div><div id="tabtext" style="padding-top: 75px;"><div id="inventory">
+
+<!---
+
+<div class="item"><div class="line"><div class="linelabel">
+    Item Name </div>
+        x #</div></div><div class="itemdetails">
+    <strong> Weight </strong> 
+    <strong> Tag </strong>
+    <strong> Tag </strong> <br>
+<p>Item Description and Details. </p></div>
+
+--->
+
+<div class="item"><div class="line"><div class="linelabel">
+    Item Name </div>
+        x #</div></div><div class="itemdetails">
+    <strong> Weight </strong> 
+    <strong> Tag </strong>
+    <strong> Tag </strong> <br>
+<p>Item Description and Details. </p></div>
+
+<div class="item"><div class="line"><div class="linelabel">
+    Item Name </div>
+        x #</div></div><div class="itemdetails">
+    <strong> Weight </strong> 
+    <strong> Tag </strong>
+    <strong> Tag </strong> <br>
+<p>Item Description and Details. </p></div>
+
+<div class="item"><div class="line"><div class="linelabel">
+    Item Name </div>
+        x #</div></div><div class="itemdetails">
+    <strong> Weight </strong> 
+    <strong> Tag </strong>
+    <strong> Tag </strong> <br>
+<p>Item Description and Details. </p></div>
+              </div></div></div>
+
+<!------------------------------ NAVIGATION TAB ----------------------------->
+
+            <div id="tab7" class="tab">
+              <div id="tabtext"><br>
+<div id="lyrics"><div class="line"><div class="linelabel">Lyrics</div><br>
+    Lyric Line <br>
+    Lyric Line <br>
+    Lyric Line <br>
+    Lyric Line <br>
+<a href="URL" target="_blank">
+Song Title - Song Artist</a></div>
+    
+</div>
+
+<div id="tropes"><div class="line"><div class="linelabel">Tropes</div><br>
+    <a href="URL">Trope</a>
+    <a href="URL">Trope</a>
+    </div>
+    </div>
+              </div></div>
+</body>
+</html>

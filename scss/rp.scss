@@ -1,0 +1,127 @@
+@import 'mixins';
+
+$player1-background: #e3e4e5;
+$player1-font: #584948;
+$player1-accent: #ffaa2f;
+
+$player2-background: #575c63;
+$player2-font: #afc0d7;
+$player2-accent: #d6dde8;
+
+body {
+  background: url("http://wallpapercave.com/wp/0m541yD.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  margin-left: 20%;
+  margin-right: 15%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 750px;
+}
+
+.post {
+  margin: 20px 10px;
+  border-radius: 10px;
+  padding: 0 50px 15px 50px;
+  -webkit-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+}
+
+p {
+  font-size: 13pt;
+  display: inline-block;
+}
+
+p::first-letter {
+  font-size: 20pt;
+  display: inline-block;
+}
+
+#player1 {
+  background: $player1-background;
+  color: $player1-font;
+}
+
+#player1 span {
+  color: $player1-accent;
+}
+
+#player1::before {
+  content: "";
+  display: inline-block;
+  float: left;
+  border-right: 20px solid $player1-background;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  height: 1px;
+  width: 1px;
+  position: relative;
+  right: 85px;
+  top: 20px;
+}
+
+#player1 p::before {
+  content: "";
+  height: 75px;
+  width: 75px;
+  background: grey;
+  border: 5px solid $player1-background;
+  background: url("https://bescented.com/wp-content/uploads/2016/01/Marigold-glitter-128x128.jpeg");
+  background-size: cover;
+  position: absolute;
+  border-radius: 100%;
+  display: inline-block;
+  float: left;
+  margin-left: -160px;
+  margin-top: -15px;
+  -webkit-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+}
+
+#player2 {
+  background: $player2-background;
+  color: $player2-font;
+}
+
+#player2 span {
+  color: $player2-accent;
+}
+
+#player2::before {
+  content: "";
+  display: inline-block;
+  float: right;
+  border-left: 20px solid $player2-background;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid transparent;
+  height: 1px;
+  width: 1px;
+  position: relative;
+  left: 85px;
+  top: 20px;
+}
+
+#player2 p::before {
+  content: "";
+  height: 75px;
+  width: 75px;
+  background: grey;
+  border: 5px solid $player2-background;
+  background: url("https://a.wattpad.com/useravatar/IzzyPhan.256.221053.jpg");
+  background-size: cover;
+  position: absolute;
+  border-radius: 100%;
+  display: inline-block;
+  float: right;
+  margin-left: 700px;
+  -webkit-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+}
